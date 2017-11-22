@@ -4,7 +4,7 @@ GradlePlugin gradle 插件开发，发布
 
 - 文件下载
 
-文件加载核心使用的 [OkHttp](http://square.github.io/okhttp/)
+文件下载核心使用的 [OkHttp](http://square.github.io/okhttp/)
 
 
 ## 插件的详情页
