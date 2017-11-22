@@ -7,19 +7,27 @@ dependencies {
     compile 'com.squareup.okhttp3:okhttp:3.9.1'
 }
 
-version = "1.2"
-group = "com.zhaoyanjun"
+version = "1.1" //插件版本号，给用户展示的版本
+group = "com.zhaoyanjun"  //组名
 
 pluginBundle {
     website = 'http://www.gradle.org/'
     vcsUrl = 'https://github.com/zyj1609wz/GradlePlugin'
     description = 'this is a plugin for image download'
-    tags = ['androidStudio', 'android','gradle']
+    tags = ['androidStudio', 'android', 'gradle']
 
     plugins {
         greetingsPlugin {
-            id = 'com.zhaoyanjun'
-            displayName = 'DownloadPlugins'
+            //这个id 必须和 yanjun.download.properties 名字相同
+            //id的作用：apply plugin: "yanjun.download"
+            id = 'yanjun.download'
+
+            //这个名字没有什么用，相当于插件的作用，给开发看
+            displayName = 'Gradle Greeting plugin'
+
+            //tag比较重要，搜索引擎需要
+            tags = ['android', 'download', 'imagedownload']
+            version = '1.1'//这个版本是开发者后台看到的版本
         }
     }
 }

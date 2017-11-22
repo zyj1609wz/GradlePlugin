@@ -32,9 +32,11 @@ public class DownloadService {
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 InputStream is = response.body().byteStream();
-                File file = new File("C:\\Users\\yiba_zyj\\Desktop" + System.currentTimeMillis() + ".jpg");
+                String filePath = "C:\\Users\\yiba_zyj\\Desktop" + System.currentTimeMillis() + ".jpg";
+                File file = new File(filePath);
+                file.createNewFile();
 
-                byte[] buf = new byte[1024 * 2];
+                byte[] buf = new byte[1024];
                 int len = 0;
 
                 FileOutputStream fos = new FileOutputStream(file);
