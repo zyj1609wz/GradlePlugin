@@ -22,7 +22,7 @@ buildscript {
     }
   }
   dependencies {
-    classpath "gradle.plugin.com.zhaoyanjun:ImagePlugin:1.0"
+    classpath "gradle.plugin.com.zhaoyanjun:FilePlugin:1.3"
   }
 }
 ```
@@ -31,4 +31,23 @@ buildscript {
 
 ```
 apply plugin: "yanjun.download"
+```
+
+3、执行下载任务
+
+``
+gradlew :WifiToolsTest:downloadFile -Purl=yourUrl  -Ptarget=yourTarget
+
+``
+
+yourUrl ：需要下载的文件路径
+yourTarget：下载文件要保存的路径
+
+## 应用举例
+
+下载图片,并且保存到电脑桌面
+
+```aidl
+gradle downloadFile -Purl=http://hiphotos.baidu.com/b951f8198718e357.jpg  -Ptarget=C:\Users\yiba_zyj\Desktop
+\12345.png
 ```
