@@ -17,7 +17,7 @@ import okhttp3.Response;
 
 public class DownloadService {
 
-    public static void download(String url) {
+    public static void download(String url,String target) {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
                 .url(url)
@@ -32,8 +32,7 @@ public class DownloadService {
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 InputStream is = response.body().byteStream();
-                String filePath = "C:\\Users\\yiba_zyj\\Desktop" + System.currentTimeMillis() + ".jpg";
-                File file = new File(filePath);
+                File file = new File(target);
                 file.createNewFile();
 
                 byte[] buf = new byte[1024];
