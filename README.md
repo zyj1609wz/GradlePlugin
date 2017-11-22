@@ -38,7 +38,7 @@ apply plugin: "yanjun.download"
 3、执行下载任务
 
 ```
-gradlew :WifiToolsTest:downloadFile -Purl=yourUrl  -Ptarget=yourTarget
+gradle downloadFile -Purl=yourUrl  -Ptarget=yourTarget
 
 ```
 
