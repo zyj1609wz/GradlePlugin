@@ -43,7 +43,8 @@ gradlew :WifiToolsTest:downloadFile -Purl=yourUrl  -Ptarget=yourTarget
 ```
 
 yourUrl ：需要下载的文件路径
-yourTarget：下载文件要保存的路径
+
+yourTarget：下载完成后，文件存储的路径
 
 ## 应用举例
 
