@@ -48,7 +48,7 @@ yourTarget：下载文件要保存的路径
 
 ## 应用举例
 
-下载图片,并且保存到电脑桌面
+下载图片,并且保存到电脑的 d 盘
 
 ```
 gradle downloadFile -Purl=http://hiphotos.baidu.com/b951f8198718e357.jpg  -Ptarget=d:\12345.png
