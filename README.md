@@ -1,5 +1,5 @@
 # GradlePlugin
-GradlePlugin gradle 插件开发，发布
+
 ## 插件的功能
 
 - 文件下载
