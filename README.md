@@ -4,13 +4,12 @@ GradlePlugin gradle 插件开发，发布
 
 - 文件下载
 
-文件加载核心使用的 okHttp
+文件加载核心使用的 [OkHttp](http://square.github.io/okhttp/)
+
 
 ## 插件的详情页
 
-```
-https://plugins.gradle.org/plugin/yanjun.download
-```
+- [https://plugins.gradle.org/plugin/yanjun.download](https://plugins.gradle.org/plugin/yanjun.download)
 
 ## 插件的使用
 
